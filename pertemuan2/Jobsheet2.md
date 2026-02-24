@@ -15,7 +15,9 @@ dalam slot dari disk yang dipakai sebagai cadangan ketika sewaktu-waktu RAM suda
 ## Latihan 2.2
 Temukan 1 perangkat PCI (misal NIC) dan tuliskan: Vendor:Device ID (angka
 heksadesimal), nama driver/modul kernel, dan deskripsi singkat fungsinya.
-![Alt text](img_js2lt/)
+
+![Alt text](img_js2lt/Lt_2.2.png)
+
 Vendor:Device ID (angka heksadesimal): 8086:100e
 Nama Driver/Modul Kernel: Intel 82540EM Gigabit Ethernet Controller/e1000
 Deskripsi Singkat Fungsi: sebagai antarmuka jaringan (NIC) untuk menghubungkan komputer ke jaringan kabel
@@ -34,13 +36,16 @@ Perbedaanya adalah:
 Gunakan grep untuk menampilkan hanya baris yang mengandung INFO atau
 WARN dari data.log. (Hint: gunakan grep -E dengan pola alternatif)
 
-![Alt text](img_js2lt/)
-![Alt text](img_js2lt/)
+![Alt text](img_js2lt/Lt_2.4-1.png)
+
+![Alt text](img_js2lt/Lt_2.4-2.png)
 
 ## Latihan 2.5
 Pilih satu port yang listening dari output ss -tulpn(misal port 22), lalu
 tuliskan service/proses yang membukanya. Jelaskan kegunaan port tersebut
 secara singkat.
+
+![Alt text](img_js2lt/Lt_2.5.png)
 
 Port : 22
 yang membuka : sshd -> daemon dari OpenSSH
@@ -52,6 +57,8 @@ Kegunaan Port: Login remote ke server secara aman, eksekusi perintah jarak jauh,
 Jalankan lspci -nnk. Pilih 1 perangkat PCI dan tuliskan: nama perangkat,
 ID vendor:device, dan kernel driver in use.
 
+![Alt text](img_js2lt/Lt_2A.png)
+
 Nama Perangkat: Intel Corporation 82540EM Gigabit Ethernet Controller.
 ID Vendor:Device: 8086:100e.
 Kernel Driver in Use: e1000
@@ -59,6 +66,8 @@ Kernel Driver in Use: e1000
 ## Latihan 2.B
 Tentukan device root filesystem dengan findmnt /. Lalu cocokkan dengan
 lsblk -f dan tuliskan tipe filesystem serta UUID-nya.
+
+![Alt text](img_js2lt/Lt_2B.png)
 
 Device Root Filesystem: /dev/mapper/ubuntu--vg-ubuntu--lv
 Tipe Filesystem: ext4
@@ -68,45 +77,35 @@ UUID: f6fb1332-927c-4d18-a8cd-552411d91040
 Buat file server.log berisi minimal 10 baris dengan variasi kata: INFO,
 WARN, ERROR. Gunakan grep untuk menampilkan hanya baris ERROR.
 
-![Alt text](img_js2lt/)
-![Alt text](img_js2lt/)
+![Alt text](img_js2lt/Lt_2C-1.png)
+
+![Alt text](img_js2lt/Lt_2C-2.png)
 
 ## Latihan 2.D
 Gunakan sed untuk mengganti semua kata server menjadi node pada file
 latihan. Tunjukkan sebelum dan sesudah.
 
-![Alt text](img_js2lt/)
+![Alt text](img_js2lt/Lt_2D.png)
 
 ## Latihan 2.E
 Gunakan df -h lalu awk untuk menampilkan filesystem yang penggunaan disk
 di atas 70%.
 
-![Alt text](img_js2lt/)
+![Alt text](img_js2lt/Lt_2E.png)
 
-(di saya tidak ada yang lebih dari 70%)
+ket: pada device saya, tidak ada yang lebih dari 70%
 
 ## Latihan 2.F
 Jalankan sleep 600 &. Temukan PID-nya dengan ps. Hentikan dengan
 SIGTERM. Jelaskan beda SIGTERM vs SIGKILL.
 
-![Alt text](img_js2lt/)
-![Alt text](img_js2lt/)
+![Alt text](img_js2lt/Lt_2F.png)
 
 Perbedaan SIGTERM vs SIGKILL
-Berdasarkan konsep manajemen proses dalam dokumen:
-
-
-SIGTERM (Sinyal 15): Adalah permintaan penghentian secara "sopan" 
-atau graceful. Sinyal ini memberi kesempatan pada aplikasi untuk menyimpan 
-data, menutup koneksi, dan membersihkan file sementara sebelum benar-benar berhenti.
-
-SIGKILL (Sinyal 9): Adalah penghentian paksa atau force stop. Sinyal ini 
-tidak bisa diabaikan oleh aplikasi; sistem operasi akan langsung mematikan
-proses tersebut seketika tanpa memberikan waktu bagi aplikasi untuk melakukan persiapan penutupan
-
+SIGTERM(signal 15) adalah sinyal terminasi yang akan dikirimkan pada suatu proses untuk memintanya untuk berhenti secara normal. Memberikan kesempatan bagi aplikasi untuk melakukan penyimpanan pada data progres pekerjaan, menutup koneksi database, hingga menghapus file sementara sebelum benar benar mati. Kalau SIGKILL adalah sinyal terminasi paksa yang akan langsung mengeksekusi proses dan menghapusnya dari memori langsung tanpa peringatan. Walau efektif untuk dipakai saat terjadi macet, namun berisiko menyebabkan data korup. 
 
 ## Latihan 2.G
 Gunakan systemctl –failed. Jika tidak ada yang gagal, pilih satu service
 aktif (misal ssh) dan tampilkan status serta 30 baris log terakhirnya.
+![Alt text](img_js2lt/Lt_2G.png)
 
-![Alt text](img_js2lt/)
