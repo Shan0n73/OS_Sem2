@@ -1,22 +1,4 @@
 # Jobsheet 1
-<<<<<<< HEAD
-
-## Latihan 
-
-### Latihan Konseptual
-
-#### Latihan 1.1
-Jelaskan 5 fungsi utama sistem operasi dengan contoh konkret dari minimal 2
-OS berbeda (Windows, macOS, atau Linux).
-
-#### Jawaban Latihan 1.1
-
-#### Latihan 1.2
-Kapan sebaiknya menggunakan Windows vs Linux vs macOS? Analisis
-berdasarkan use case: gaming, development, server, creative work, dan enterprise.
-
-#### Jawaban Latihan 1.2
-=======
 ## Latihan Konseptual
 ### Latihan 1.1
 Jelaskan 5 fungsi utama sistem operasi dengan contoh konkret dari minimal 2
@@ -91,4 +73,4 @@ Sejak dulu saya selalu menggunakan sistem operasi Windows, saya selalu menggunak
 
 Ini salah satu dokumentasi saat menggunakan server Ubuntu dengan htop
 ![Alt text for screen readers](img_js1/Lt_1.5-5.png)
->>>>>>> ee2e904 (Minggu 1)
+
