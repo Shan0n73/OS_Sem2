@@ -102,10 +102,11 @@ SIGTERM. Jelaskan beda SIGTERM vs SIGKILL.
 ![Alt text](img_js2lt/Lt_2F.png)
 
 Perbedaan SIGTERM vs SIGKILL
-SIGTERM(signal 15) adalah sinyal terminasi yang akan dikirimkan pada suatu proses untuk memintanya untuk berhenti secara normal. Memberikan kesempatan bagi aplikasi untuk melakukan penyimpanan pada data progres pekerjaan, menutup koneksi database, hingga menghapus file sementara sebelum benar benar mati. Kalau SIGKILL adalah sinyal terminasi paksa yang akan langsung mengeksekusi proses dan menghapusnya dari memori langsung tanpa peringatan. Walau efektif untuk dipakai saat terjadi macet, namun berisiko menyebabkan data korup. 
+SIGTERM(signal 15) adalah sinyal terminasi yang akan dikirimkan pada suatu proses untuk memintanya untuk berhenti secara normal. Memberikan kesempatan bagi aplikasi untuk melakukan penyimpanan pada data progres pekerjaan, menutup koneksi database, hingga menghapus file sementara sebelum benar benar mati. Kalau SIGKILL(signal 9) adalah sinyal terminasi paksa yang akan langsung mengeksekusi proses dan menghapusnya dari memori langsung tanpa peringatan. Walau efektif untuk dipakai saat terjadi macet, namun berisiko menyebabkan data korup. 
 
 ## Latihan 2.G
 Gunakan systemctl –failed. Jika tidak ada yang gagal, pilih satu service
 aktif (misal ssh) dan tampilkan status serta 30 baris log terakhirnya.
 ![Alt text](img_js2lt/Lt_2G.png)
+
 
