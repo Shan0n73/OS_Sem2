@@ -21,7 +21,9 @@ Minimal luaran:
 • file laporan toolkit-bash-report.txt.
 
 Output:
-![Alt text]()
+
+
+
 
 ### Tugas Praktikum 2 — Audit File Konfigurasi dan Logging Aman
 Konteks riil: saat troubleshooting, administrator sering perlu menginventarisasi file konfigurasi dan memisahkan output normal dari pesan error.
