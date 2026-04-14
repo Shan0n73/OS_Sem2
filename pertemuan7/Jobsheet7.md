@@ -21,6 +21,7 @@ Minimal luaran:
 • file laporan toolkit-bash-report.txt.
 
 Output:
+
 ![Alt text](js7/7-1.png)
 ![Alt text](js7/7-2.png)
 ![Alt text](js7/7-3.png)
@@ -50,7 +51,8 @@ Minimal luaran:
 • perintah yang digunakan,
 • analisis singkat hasil audit.
 
-Output
+Output:
+
 ![Alt text](js7/7-6.png)
 ![Alt text](js7/7-7.png)
 ![Alt text](js7/7-8.png)
