@@ -21,9 +21,11 @@ Minimal luaran:
 • file laporan toolkit-bash-report.txt.
 
 Output:
-
-
-
+![Alt text](js7/7-1.png)
+![Alt text](js7/7-2.png)
+![Alt text](js7/7-3.png)
+![Alt text](js7/7-4.png)
+![Alt text](js7/7-5.png)
 
 ### Tugas Praktikum 2 — Audit File Konfigurasi dan Logging Aman
 Konteks riil: saat troubleshooting, administrator sering perlu menginventarisasi file konfigurasi dan memisahkan output normal dari pesan error.
@@ -49,7 +51,9 @@ Minimal luaran:
 • analisis singkat hasil audit.
 
 Output
-![Alt text]()
+![Alt text](js7/7-6.png)
+![Alt text](js7/7-7.png)
+![Alt text](js7/7-8.png)
 
 ### Tugas Praktikum 3 — Mini Health Check Harian Server
 Konteks riil: administrator perlu membuat pemeriksaan cepat (health check) untuk mengetahui kondisi dasar server sebelum dan sesudah maintenance.
@@ -83,7 +87,9 @@ Minimal luaran:
 
 
 Output:
-![Alt text]()
+
+![Alt text](js7/7-9.png)
+![Alt text](js7/7-10.png)
 
 
 ### Tugas Praktikum 4 — Penanganan File dengan Nama Kompleks dan Arsip Aman
@@ -115,4 +121,10 @@ Minimal luaran:
 • refleksi singkat tentang pentingnya quoting di Bash.
 
 Output:
-![Alt text]()
+
+![Alt text](js7/7-11.png)
+![Alt text](js7/7-12.png)
+![Alt text](js7/7-13.png)
+![Alt text](js7/7-14.png)
+![Alt text](js7/7-15.png)
+
