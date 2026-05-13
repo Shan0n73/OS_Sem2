@@ -36,6 +36,12 @@ group proyek.
 ###  Latihan 9.B — Kebijakan Akun dan Quota
 Tuliskan langkah untuk membuat user intern, menambahkannya ke group labgroup, memaksa pergantian password tiap 45 hari (warning 7 hari), memberi izin sudo hanya untuk systemctl status, dan menetapkan quota ruang serta inode sederhana pada /home/.
 
+<img width="1170" height="156" alt="image" src="https://github.com/user-attachments/assets/f2564183-88e5-4a17-ae13-0327aa3d105d" />
 
+<img width="1172" height="800" alt="Screenshot 2026-05-13 195252" src="https://github.com/user-attachments/assets/cfdf821a-6998-4042-bd03-ed9c23c41f5d" />
 
+<img width="1249" height="57" alt="Screenshot 2026-05-13 201408" src="https://github.com/user-attachments/assets/892b5e49-2edb-4e64-9180-b4bb8498369c" />
 
+<img width="888" height="132" alt="image" src="https://github.com/user-attachments/assets/af1c0763-cc08-426a-9fc7-df3c42483dd3" />
+
+Saya mengalami kendala ketika mencoba melakukan setquota karena limitasi/pembatasan dari VM-nya dimana sistemnya tidak mendukung quota, tapi saya telah menyelesaikan seluruh bagian lainnya yang tersisa.
