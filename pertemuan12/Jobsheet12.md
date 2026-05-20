@@ -57,7 +57,7 @@ Buat layanan systemd kustom yang mendemonstrasikan fitur restart otomatis.
 
 =<img width="852" height="84" alt="image" src="https://github.com/user-attachments/assets/1784c4e7-9fd4-4121-b36a-0fe9da76e636" />
 
-q<img width="1291" height="366" alt="image" src="https://github.com/user-attachments/assets/c232f29f-542d-4ce2-8fc6-3f6b0592c34f" />
+<img width="1291" height="366" alt="image" src="https://github.com/user-attachments/assets/c232f29f-542d-4ce2-8fc6-3f6b0592c34f" />
 
 
 4. Simulasikan crash dengan membunuh proses secara paksa (kill -9), tunggu 10 detik, dan verifikasi bahwa layanan hidup kembali secara otomatis.
@@ -68,19 +68,32 @@ PIDnya digantikan, yang berarti telah layanan hidup kembali secara otomatis.
 
 5. Bersihkan: nonaktifkan layanan dan hapus berkas unit setelah selesai.
 
+<img width="618" height="98" alt="image" src="https://github.com/user-attachments/assets/080e8de8-4e3f-4429-97de-c2e77273cb3d" />
+
 
 ### Latihan 10.3 Investigasi Log dan Keamanan SSH
 Analisis log sistem dan tingkatkan keamanan konfigurasi SSH.
 1. Gunakan journalctl -b -p err untuk menemukan semua error sejak boot terakhir. Simpan hasilnya ke berkas dan hitung jumlah baris dengan wc -l.
 
+= <img width="549" height="50" alt="image" src="https://github.com/user-attachments/assets/2c54b5ae-6127-40f8-9610-b40c8e1c8950" />
 
 
 2. Lakukan tiga perubahan keamanan pada /etc/ssh/sshd_config: tambahkan PermitRootLogin no, MaxAuthTries 3, dan LoginGraceTime 30. Ikuti alur aman: backup, edit, validasi sshd-t, reload.
 
+= <img width="648" height="22" alt="image" src="https://github.com/user-attachments/assets/a6ada1fe-8d09-4acf-b0a3-ad5f542bc798" />
+
+<img width="858" height="742" alt="image" src="https://github.com/user-attachments/assets/3f264cdd-7c1b-4c02-adf2-092253b44103" />
+
+<img width="423" height="43" alt="image" src="https://github.com/user-attachments/assets/1b32de87-4288-42a1-8686-ae95d860b17a" />
 
 
 3. Setelah reload, verifikasi tiga hal: layanan masih berjalan (systemctl status ssh), port masih mendengarkan (ss -tlnp | grep ssh), dan konfigurasi baru terbaca (grep -E "PermitRoot|MaxAuth|GraceTime" /etc/ssh/sshd_config).
 
+= <img width="856" height="404" alt="image" src="https://github.com/user-attachments/assets/f8bb318a-431e-47d6-a1e8-002ab42d216f" />
 
 
 4. Kembalikan konfigurasi SSH ke kondisi semula menggunakan berkas backup.
+
+= <img width="856" height="131" alt="image" src="https://github.com/user-attachments/assets/54cc919c-7161-4f9e-b870-03120a1ef0bc" />
+
+
